@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+#loMainLeft {
+	position: absolute;
+	top: 0px;
+	left:0;
+	width: 170px;
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: left;
+/*	border-right: 1px solid #CCCCCC; */
+}
+
+#loMainRight {
+	clear: both; 
+	width: 580px;
+	min-height: 700px;
+	margin-left: 170px;
+	padding-left: 10px; 
+	text-align: left;
+	line-height: 1.5em;
+	border-left: 1px solid #CCCCCC; 
+}
+
+/* Headings */
+h5.red {
+	color: #7e153c;
+	font-size: 12px;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #7e153c;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h5.blueback {
+	color: #ffffff;
+	background-color: <cfoutput>#Application.Settings.LogoMainColorBG#</cfoutput>;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #142855;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.blueback a:link, .blueback a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+h5.redstatus {
+	color: #ffffff;
+	background-color: #ff0000;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.redstatus a:link, .redstatus a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+h5.yellowstatus {
+	color: #000000;
+	background-color: #ffff00;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.yellowstatus a:link, .yellowstatus a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+
+h5.greenstatus {
+	color: #000000;
+	background-color: #00ff00;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.greenstatus a:link, .greenstatus a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+
+h5.bluestatus {
+	color: #ffffff;
+	background-color: #0000ff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.bluestatus a:link, .bluestatus a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+/* Learning Outcomes Table formats */
+.loCreateTable {
+	border: 0px solid #142855;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 580px;
+}
+.loCreateTable td {
+	border: 0px solid #142855;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+}
+.loCreateTable th {
+	border: 0px solid #0083CA;
+	font-weight: bold;
+	text-align: left;
+	vertical-align:middle;
+}
+.cloCreateTable {
+	border: 0px solid #142855;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+}
+.cloCreateTable td {
+	border: 0px solid #142855;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+}
+.cloCreateTable th {
+	border: 0px solid #0083CA;
+	font-weight: bold;
+	text-align: left;
+	vertical-align:middle;
+}
+
+
+.loEntryInput {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	background-color:#EDEDED;
+	border: 1px solid #142855;
+}
+.loEntryInputNB {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	background-color:#EDEDED;
+	border: 0px solid #142855;
+}
+
+
+/* Learning Outcomes Table formats */
+.loSummaryTable {
+	border: 1px solid #E7E7E7;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	#border-collapse: collapse;
+	margin-left: 5px;
+	width: 580px;
+}
+.loSummaryTable td {
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	color: #000000;
+}
+.loSummaryTable th {
+	font-weight: bold;
+	text-align: left;
+	vertical-align:middle;
+}
+
+.cloSummaryTable {
+	border: 1px solid #E7E7E7;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	#border-collapse: collapse;
+	margin-left: 5px;
+	width: 550px;
+}
+
+.cloSummaryTable td {
+	#border: 1px solid #142855;
+	padding: 0px 0px 0px 0px;
+	#text-align: left;
+	background-color: #ffffff;
+	vertical-align: top;
+	color:#333333;
+}
+.cloSummaryTable th {
+	border-bottom: 1px solid #E7E7E7;
+	font-weight: bold;
+	text-align: left;
+	vertical-align:middle;
+}
+

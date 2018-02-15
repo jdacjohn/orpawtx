@@ -1,0 +1,381 @@
+var dynamic_url = "http://www.helponclick.com/";
+var static_url = "http://static.helponclick.com/";
+var secured_url = "https://www.helponclick.com/livechat/"; 
+                                            
+var root_url = dynamic_url + "livechat/";
+var ssl_url = root_url;
+var click_url = root_url;
+                       
+if(window.hoc_secured)
+{
+	if(window.hoc_secured=="yes")
+		ssl_url = secured_url;
+}                              
+                              
+var ns=(document.layers);
+var ie=(document.all);
+var w3=(document.getElementById);
+//var w3=(document.getElementById && !ie);
+
+if(window.hoc_usrnme && window.hoc_u)
+{                                       
+        try 
+        {           
+                var get_vars = "?usrname="+hoc_usrnme+"&usr_id="+hoc_u+"&s_url="+escape(top.window.document.URL)+"&referer="+escape(top.document.referrer);
+        }
+        catch(err)
+        {
+                var get_vars = "?usrname="+hoc_usrnme+"&usr_id="+hoc_u;
+        }
+                 
+        if(window.hoc_d)
+                get_vars+= "&dp_id="+hoc_d;
+        else if(window.hoc_o)
+                get_vars+= "&op_id="+hoc_o;
+        if(window.hoc_nickname)
+                get_vars+= "&nickname="+escape(hoc_nickname);
+	var chat_opened = 0;
+	var start_tracker = get_unique();
+	var do_tracker_flag_1 = 1 ;
+        var tracker_image = new Image;
+        var tracker_text = new Image;
+	var invite = "<div id='hoc_invitation' style='display:none;visibility:hidden;position:absolute;height:1;width:1px;'></div>"
+                      
+	if(hoc_mode=="text")
+	{
+		var unique = get_unique();
+		tracker_text = new Image;
+		tracker_text.onload = check_online;
+		tracker_text.src = ssl_url + "src.php"+get_vars+"&u="+unique;
+	}
+	else
+	{
+		var hoc_icon = "<DIV id='hoc_icon' onmousemove='javascript:window.status=\"Click for live help\"' onmouseout='javascript:window.status=\"\"'></DIV>";
+		document.write(hoc_icon);
+		var unique = get_unique();
+		tracker_text = new Image;
+                tracker_text.onload = check_online;
+		tracker_text.src = ssl_url + "src.php"+get_vars+"&u="+unique;     
+	}                   
+	document.write(invite);
+	//do_invite_tracker();
+}
+
+function check_online()
+{                 
+	initiate = tracker_text.width;        
+	if ( initiate >= 2 )
+	{
+		if(hoc_mode!="text")
+			do_online_image(true);
+		else
+			do_online_text(true);
+
+		//if ( initiate == 3 )
+			do_invite_tracker();
+	}
+	else
+        {
+		if(hoc_mode!="text")
+			do_online_image(false);
+		else
+			do_online_text(false);
+        }
+}
+
+function show_text(hoc_div)
+{
+	var html_1 = "<DIV onmousemove='javascript:window.status=\"Click for live help\"' onmouseout='javascript:window.status=\"\"' onclick='window.open(\""+click_url + "livechat.php" + get_vars+"\",\"chat_login\",\"top=200,left=200,width=450,height=400,scrollbars=no,status=0,toolbar=no,location=no,resizable=no\")' style='cursor:pointer;cursor:hand'>";
+	var html_2 = "</DIV>";
+
+	hoc_div.innerHTML = html_1 + hoc_div.innerHTML + html_2;
+}
+
+function do_online_image(is_online)
+{          
+	var html_1 = "<DIV onclick='window.open(\""+click_url + "livechat.php" + get_vars+"\",\"chat_login\",\"top=200,left=200,width=450,height=400,scrollbars=no,status=0,toolbar=no,location=no,resizable=no\")' style='cursor:pointer;cursor:hand'>";
+	var html_2 = "</DIV></a>";
+	if(is_online)
+        {
+                str_online_image = new String(hoc_image_online);
+                str_online_image = str_online_image.replace(dynamic_url,static_url);
+                var online_image = new Image;
+	        online_image.src = str_online_image;
+		src = "<IMG SRC='"+online_image.src+"' alt='Click for Live Chat' border=0>";
+        }
+	else
+        {
+                str_offline_image = new String(hoc_image_offline);   
+                str_offline_image = str_offline_image.replace(dynamic_url,static_url);   
+                var offline_image = new Image;          
+	        offline_image.src = str_offline_image;
+		src = "<IMG SRC='"+offline_image.src+"' alt='Leave a Message' border=0>";
+        }
+
+	if (document.getElementById)
+		document.getElementById("hoc_icon").innerHTML = html_1+src+html_2;
+	else if (document.all)
+		document.all["hoc_icon"].innerHTML = html_1+src+html_2;
+	else if (document.layers)
+		document.layers["hoc_icon"].innerHTML = html_1+src+html_2;
+}
+
+function do_online_text(is_online)
+{
+	if(is_online)
+	{
+		hoc_div_name_visible = "hoc_icon_online";
+		hoc_div_name_hidden = "hoc_icon_offline";
+	}
+	else
+	{
+		hoc_div_name_visible = "hoc_icon_offline";
+		hoc_div_name_hidden = "hoc_icon_online";
+	}
+		
+	if (document.getElementById)
+	{
+		hoc_icon_div_visible = eval(document.getElementById(hoc_div_name_visible));
+		hoc_icon_div_hidden = eval(document.getElementById(hoc_div_name_hidden));
+		hoc_icon_div_hidden.style.display = "none";
+		hoc_icon_div_visible.style.display = "";
+		hoc_icon_div_visible.style.visibility = "visible";
+	}
+	else if (document.all)
+	{
+		hoc_icon_div_visible = document.all[hoc_div_name_visible];
+		hoc_icon_div_hidden = document.all[hoc_div_name_hidden];
+		hoc_icon_div_hidden.style.display = "none";
+		hoc_icon_div_visible.style.display = "";
+		hoc_icon_div_visible.style.visibility = "visible";
+	}
+	else if (document.layers)
+	{
+		hoc_icon_div_visible = document.layers[hoc_div_name_visible];
+		hoc_icon_div_hidden = document.layers[hoc_div_name_hidden];
+		hoc_icon_div_hidden.display = "hide";
+		hoc_icon_div_visible.visibility = "show";
+	}
+	
+	show_text(hoc_icon_div_visible);
+}
+
+function check_invite()
+{
+        initiate = tracker_image.width;
+        //alert(initiate);
+
+	if ( ( initiate == 2 ) && !chat_opened )
+	{
+		chat_opened = 1 ;
+		//do_tracker_flag_1 = 0;
+		do_invite() ;
+	}
+
+	if ( ( initiate == 1 ) && chat_opened )
+		chat_opened = 0 ;
+}
+
+function do_invite_tracker()
+{
+	var unique = get_unique();
+	time_elapsed = unique - start_tracker ; 
+	//if ( time_elapsed > 3600000/2 )
+        
+        if ( time_elapsed > 5*60*1000 ) // 5 minutes
+		do_tracker_flag_1 = 0;
+
+        tracker_image = new Image;
+	tracker_image.src = ssl_url + "tracker.php?usr_id="+hoc_u+"&u="+unique;
+	tracker_image.onload = check_invite;
+            
+	if ( do_tracker_flag_1 == 1 )
+		setTimeout("do_invite_tracker()",14000) ;
+}
+
+
+function do_invite()
+{
+	//=============================== popup/popup.js
+        adTime=3;  // seconds ad reminder is shown
+        chanceAd=2; // ad will be shown 1 in X times (put 1 for everytime)
+
+        var calunit=ns? "" : "px"
+        adCount=0;
+	
+	if(window.hoc_image_invite)
+		var hoc_image_invite = window.hoc_image_invite;
+	else
+		var hoc_image_invite = ssl_url + "../images/invite_5.gif";
+	if(window.hoc_invite_bgcolor)
+		var hoc_invite_bgcolor = window.hoc_invite_bgcolor;
+	else
+		var hoc_invite_bgcolor = "white";
+	
+	var unique = get_unique();
+
+	//=============================== popup/popup.js
+        var chat_login_link = click_url+"livechat.php"+get_vars+"&mode=invite";
+	var invite_html = "<table cellpadding=3 cellspacing=0 border=1 bgcolor="+hoc_invite_bgcolor+" style='border-color:gray'><tr><td>";
+	invite_html    += "<table border=0 cellpadding=0 cellspacing=0>";
+	invite_html    += "<tr><td align='right' valign='top'><iframe src='"+ssl_url+"iframe_write_invite.php?usr_id="+hoc_u+"&u="+unique+"' frameborder=0 border=0 width=0 height=0 marginwidth=0 marginheight=0 scrolling='no'></iframe><IMG src='"+ssl_url+"../images/close.gif' style='cursor:pointer;cursor:hand' onclick='closeAd()'></td></tr>";
+	invite_html    += "<tr><td height=3></td></tr>";
+	invite_html    += "<tr><td align='center' valign='middle'><IMG src='"+hoc_image_invite+"' style='cursor:pointer;cursor:hand' onclick='window.open(\""+chat_login_link+"\",\"\",\"width=450,height=400,left=200,top=200\");closeAd();'></td></tr>";
+	invite_html    += "</table></td></tr></table>";
+
+	if (w3)
+		document.getElementById("hoc_invitation").innerHTML = invite_html;
+	else if (ie)
+		document.all['hoc_invitation'].innerHTML = invite_html;
+	else if (ns)
+		document.layers['hoc_invitation'].innerHTML = invite_html;
+
+	initAd();
+}
+
+function closeAd()
+{
+	if (ie||w3)
+		adDiv.visibility = "hidden";
+	else
+		adDiv.visibility ="hide";
+}
+
+function initAd()
+{
+	if (w3)
+		adDiv = eval('document.getElementById("hoc_invitation").style');
+	else if (ie)
+		adDiv = eval('document.all.hoc_invitation.style');
+	else if (ns)
+		adDiv = eval('document.layers["hoc_invitation"]');
+	else
+		return;
+
+	adDiv.display="";
+        if (ie||w3)
+    	        adDiv.visibility="visible";
+        else
+    	adDiv.visibility ="show";
+
+	showAd();
+}
+function showAd()
+{
+	if(adCount<adTime*10)
+	{
+		adCount+=1;
+		if (ie)
+		{
+			documentWidth =	truebody().offsetWidth;
+			documentHeight =truebody().offsetHeight;
+		}
+		else if (ns)
+		{
+			documentWidth=window.innerWidth;
+			documentHeight=window.innerHeight;
+		}
+		else if (w3)
+		{
+			documentWidth=self.innerWidth;
+			documentHeight=self.innerHeight;
+		}
+
+		if(window.hoc_invite_image_width)
+			var hoc_invite_image_width = window.hoc_invite_image_width;
+		else
+			var hoc_invite_image_width = 316;
+		if(window.hoc_invite_image_height)
+			var hoc_invite_image_height = window.hoc_invite_image_height;
+		else
+			var hoc_invite_image_height = 233;
+		if(window.hoc_invite_position)
+			var hoc_invite_position = window.hoc_invite_position;
+		else
+			var hoc_invite_position = "center";
+
+		var space = 20;
+
+		if(hoc_invite_position=="left_top")
+		{
+			//==== left top
+			adDiv.left =	space;
+			adDiv.top  =	space;
+		}
+		else if(hoc_invite_position=="left_middle")
+		{
+			//==== left middle
+			adDiv.left =	space;
+			adDiv.top  =	(documentHeight/2)-(hoc_invite_image_height/2);
+		}
+		else if(hoc_invite_position=="left_bottom")
+		{
+			//==== left bottom
+			adDiv.left =	space;
+			adDiv.top  =	documentHeight-hoc_invite_image_height-(space*3);
+		}
+		else if(hoc_invite_position=="bottom_center")
+		{
+			//==== bottom center
+			adDiv.left =	(documentWidth/2)-(hoc_invite_image_width/2);
+			adDiv.top  =	documentHeight-hoc_invite_image_height-(space*3);
+		}
+		else if(hoc_invite_position=="bottom_right")
+		{
+			//==== bottom right
+			adDiv.left =	documentWidth - hoc_invite_image_width - (space*3);
+			adDiv.top  =	documentHeight-hoc_invite_image_height-(space*3);
+		}
+		else if(hoc_invite_position=="right_middle")
+		{
+			//==== right middle
+			adDiv.left =	documentWidth - hoc_invite_image_width - (space*3);
+			adDiv.top  =	(documentHeight/2)-(hoc_invite_image_height/2);
+		}
+		else if(hoc_invite_position=="right_top")
+		{
+			//==== right top
+			adDiv.left =	documentWidth - hoc_invite_image_width - (space*3);
+			adDiv.top  =	space;
+		}
+		else if(hoc_invite_position=="center_top")
+		{
+			//==== center top
+			adDiv.left =	(documentWidth/2)-(hoc_invite_image_width/2);
+			adDiv.top  =	space;
+		}
+		else
+		{
+			//==== center
+			adDiv.left =	(documentWidth/2)-(hoc_invite_image_width/2);
+			adDiv.top  =	(documentHeight/2)-(hoc_invite_image_height/2);
+		}
+	}
+}
+
+function truebody()
+{
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function get_unique() 
+{ 
+	var date = new Date(); 
+	return date.getTime(); 
+}
+
+function getElement(element_id)
+{
+	if(document.getElementById)
+	{
+		return window.document.getElementById(element_id);
+	}
+	else if (document.all)
+	{
+		return window.document.all[element_id];
+	}
+	else if (document.layers)
+	{
+		return window.document.layers[element_id];
+	}
+}

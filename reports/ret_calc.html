@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TSTC - New Layout</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href='../css/orpa.css' rel='stylesheet' type='text/css' />
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+//--><!]]></script>
+
+</head>
+
+<body>
+
+<div id="mainContainer">
+
+
+<div id="mainHeader">
+<img src="../images/logo/logo.png" /> 
+
+
+<div id="navHorzContainer">
+		<!-- <div class="navHorzImgfloatleft"></div> -->
+		
+			<ul id="nav">
+				<li><a href="../index.html">ORPA Home</a>
+				<li><a href="../st_folio/index.html">QEP</a>
+					<ul>
+						<li class="navSub"><a href="../st_folio/orpa_rubrics.html">Rubrics</a></li>
+						<li class="navSub"><a href="../st_folio/ter.html">T.E.R.</a></li>
+						<li class="navSub"><a href="../st_folio/accuplacer.html">Accu-Placer</a></li>
+						<li class="navSub"><a href="../st_folio/resources.html">Resources</a></li>
+						<li class="navSubBottom"><a href="#"></a></li>														
+					</ul>
+				<li><a href="../staff/index.html">Staff</a>
+					<ul>
+						<li class="navSub"><a href="../staff/about.html">About us</a></li>
+						<li class="navSub"><a href="../staff/contact.html">Contact us</a></li>
+						<li class="navSub"><a href="../staff/feedback.html">Feedback</a></li>
+						<li class="navSubBottom"><a href="#"></a></li>														
+					</ul>
+        </li>
+				<li><a href="../surveys/index.html">Surveys </a>
+        	<ul>
+          	<li class="navSub"><a href="../surveys/noellevitz.html">Noel Levitz SSI</a></li>
+          	<li class="navSubBottom"><a href="#"></a></li>
+          </ul>  
+        </li>					
+				<li><a href="index.html">Reports</a>
+        	<ul>
+          	<li class="navSub"><a href="coreinds.html">Core Indicators</a></li>
+          	<li class="navSub"><a href="retain.html">Student Retention</a></li>
+          	<li class="navSub"><a href="graduate.html">Graduation Rates</a></li>
+          	<li class="navSub"><a href="demog.html">Student Demographics</a></li>
+          	<li class="navSubBottom"><a href="#"></a></li>
+          </ul>  
+        </li>	
+				<li><a href="../st_folio/link.html">Accountability</a></li>	
+				<li><a href="../st_folio/link.html">Quick Links</a>
+					<ul>
+						<li class="navSub"><a href="#">2006 Program Reviews</a></li>
+						<li class="navSub"><a href="#">2006-2007 Noel-Levitz SSI</a></li>
+						<li class="navSub"><a href="#">Presentations</a></li>
+						<li class="navSub"><a href="#">Program Competencies</a></li>
+						<li class="navSub"><a href="#">Unit Action Plans</a></li>																					
+						<li class="navSub"><a href="#">TSTC West Texas Fact Book</a></li>
+						<li class="navSub"><a href="#">Weekly Enrollment Monitor</a></li>
+						<li class="navSub"><a href="#">Daily Registration Report</a></li>
+						<li class="navSubBottom"><a href="#"></a></li>														
+					</ul>
+				</li>
+			</ul>
+            
+
+<!--		<div class="navHorzImgfloatright"></div>-->
+
+	</div>  
+	<div id="topLogin">
+	<form>
+	Username:
+	<input type='text' class='textarea' />
+	Password:
+	<input type='password' class='textarea' />
+
+	<input type='submit' value='Login' class='loginHeaderSubmit' name='Send' alt='Submit' />
+	</form>
+	</div>
+
+</div>
+   
+<div class="clearFix"></div>
+
+<div id="mainBody">
+
+
+
+<!-- MAIN RIGHT --->
+<div id="mainRight">
+
+<div class="rightContent" >
+<h4 class="blue instructional">TSTC West Texas Institutional Effectiveness & Information Research</h4>
+<h5 class="rubricHeading"><em><span>Retention Calculators</span></em></h5>
+<img class='rightImg' src='../images/logo/ieir_logo_200px.gif' />
+<p>In order to view retention figures for Texas State Technical College West Texas, please
+select one of the links shown to the left.
+</p>
+</div>
+
+<div class="rightContent" >
+<h4 class="blue linkage">Links</h4>
+
+<p>
+&bull; <a href="../index.html">IEIR Home</a><br />
+&bull; <a href="../st_folio/index.html">Student Portfolios</a><br />
+&bull; <a href="#">Quick Facts</a>
+</p>
+</div>
+
+
+</div>
+
+<!-- MAIN RIGHT END -->
+
+
+<div id="mainLeft">
+
+<!-- CALC NAV -->
+<div class="leftNavContainer" >
+
+<h4 class="blue principles">Calculators</h4>
+	<div class="navVertContainer">
+		<ul>
+    	<li><a href="/cgi-bin/orpa/ret_calc.cgi?mode=inst">Institutional Retention</a></li>
+    	<li><a href="/cgi-bin/orpa/ret_calc.cgi?mode=loc">Campus Retention</a></li>
+    	<li><a href="/cgi-bin/orpa/ret_calc.cgi?mode=prog">Program Retention</a></li>
+    	<li><a href="/cgi-bin/orpa/ret_calc.cgi?mode=crse">Course Retention</a></li>
+		</ul>
+	</div>
+</div>
+<!-- CALC NAV END -->
+
+<!-- COMMUNICATION NAV -->
+<!-- <div class="leftNavContainer" >
+
+<h4 class="blue comm">Communication</h4>
+	<div class="navVertContainer">
+		<ul>
+			<li><a href="http://tstcblog.westtexas.tstc.edu/">President's Blog</a></li>
+			<li><a href="https://my.tstc.edu/forum/index.php">Discussion Forums</a></li>
+			<li><a href="http://tstcblog.westtexas.tstc.edu/">Innovation</a></li>
+			<li><a href="http://tstcblog.westtexas.tstc.edu/">Collaboration</a></li>
+			<li><a href="http://tstcblog.westtexas.tstc.edu/">Todays Meetings</a></li>
+			<li><a href="http://tstcblog.westtexas.tstc.edu/">Project Manager</a></li>
+		</ul>
+	</div>
+</div> -->
+<!-- COMMUNICATION NAV END -->
+
+
+<!-- <a href="http://mycampus.westtexas.tstc.edu/"><img src="images/logo/mycampus_logo.gif" alt="MyCampus" style="padding-left:5px; border: 0px;" /></a> -->
+
+
+
+</div>
+<!-- MAIN BODY END -->
+</div>
+
+<div id="mainFooter">
+
+<div class='tstcFooter'>
+
+<div class='tstcFooterImg'>
+
+<img src="../images/logo/footer_logo.gif" alt="" />
+
+</div>
+
+<div class='tstcFooterContent'>
+© 2007 Texas State Technical College
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>

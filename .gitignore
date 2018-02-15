@@ -1,0 +1,34 @@
+# .gitignore 
+
+# Ignore these folders always
+backups
+backup
+
+# Ignore these files anywhere
+*.log
+*.komodoproject
+*.tmproj
+*.psd
+*.sav
+phpinfo.php
+
+.DS_store
+_siteinfo
+._*
+
+vssver.scc
+web.config
+
+# Site specific Files and Folders
+_mmServerScripts
+prfiles
+surveys
+incoming
+sacs
+templog
+pdfs
+
+*.going_away
+*.old.*
+*_old.*
+Application.cfm

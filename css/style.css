@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+html, body, h1, h2, h3, h4, h5, h6, div, span, form, p, ul, ol, dl, li, dt, dd, a, img, address {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+}
+
+body {
+	color: #5e5e5e;
+	text-align: center;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #EEEEEE;
+	background-image: url(../images/background/bg_shadow.png);
+	background-repeat: repeat-y;
+	background-position: center top;
+	
+}
+
+#mainContainer {
+	width: 780px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 600px;
+	padding: 0px;
+}
+
+
+#mainHeader {
+	margin: 0px -1px 0px 1px;
+	height: 110px;
+	padding: 0px;
+	width: 778px;
+	text-align: left;
+	background-image: url(../images/logo/header_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+	display: block;
+	border: 0px;
+}
+
+#mainHeader img {
+	padding: 5px 0px 0px 10px;
+	float: left;
+
+}
+
+#topLogin {
+	width: 550px;
+	float: right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 5px;
+	position: relative;
+	top: 30px;
+
+}
+
+.clearFix {
+	clear:both;
+}
+
+
+#mainBody {
+	width: 780px;
+	min-height: 700px;
+	position: relative;
+	/*background-attachment: fixed;
+	background-image: url(../images/logo/logo_mainbody_big.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;*/
+}
+
+#mainLeft {
+	position: absolute;
+	top: 0px;
+	left:0;
+	width: 200px;
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: left;
+/*	border-right: 1px solid #CCCCCC; */
+}
+
+#mainRight {
+	clear: both; 
+	width: 550px;
+	min-height: 700px;
+	margin-left: 200px;
+	padding-left: 10px; 
+	text-align: left;
+	line-height: 1.5em;
+	border-left: 1px solid #CCCCCC; 
+}
+
+#mainFooter {
+	margin: 0px -1px 0px 1px;
+	height: 300px;
+	padding: 0px;
+	width: 778px;
+	text-align: left;
+	background: url(../images/footer_bar2.gif) repeat-x center top #DDDDDD;
+}
+
+/******	TSTC COUSTOM FOOTER ***/
+
+.tstcFooter {
+	width: 300px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+
+}
+
+.tstcFooterImg {
+	float: right;
+	text-align: right;
+	width: 300px;
+
+
+}
+
+.tstcFooterContent {
+
+	width: 250px;
+	font-size: 9px;
+	color: #142855;
+	padding-left: 10px;
+	min-height: auto;
+	clear: both;
+
+}
+
+/************* NAVIGATION ****************/
+
+
+#navHorzContainer {
+	width: 600px;
+	margin: 0px 0px 5px 0px;
+	float: right;
+/*	display: block; */
+	height: 27px;
+	text-align: left;
+}
+
+.navHorzImgfloatleft {
+	float: left;
+	display: block;
+	height: 27px;
+	width: 15px;
+	background-image: url(../images/nav_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.navHorzImgfloatright {
+	float: right;
+	display: block;
+	height: 27px;
+	width: 15px;
+	background-image: url(../images/nav_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#nav a.daddy {
+	background: url(rightarrow2.gif) center right no-repeat;
+}
+
+/*.navSub {
+	padding-left: 20px;
+	background:../images/nav_sub_bg.gif) repeat-x bottom center;
+
+}
+*/
+
+/* ================= VERT NAV =================*/
+
+.navVertContainer {
+}
+
+.navVertContainer ul {
+	padding-left: 5px;
+	margin-left: 5px;
+	list-style: none;
+
+}
+#currentNav {
+	color:#7E143C;
+	text-decoration:none;
+	font-weight:bold;
+}
+.navVertContainer a:link, .navVertContainer a:visited{
+	text-decoration: none;
+	color: #142855;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navVertContainer a:hover {
+	text-decoration: underline;
+	color: #708ab9;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navVertContainerRed ul {
+	padding-left: 5px;
+	margin-left: 5px;
+	list-style: none;
+
+}
+
+.navVertContainerRed a:link, .navVertContainerRed a:visited{
+	text-decoration: none;
+	color: #7a003c;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navVertContainerRed a:hover {
+	text-decoration: underline;
+	color: #992135;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*=================== END NAV ============*/
+
+/*=================== LEFT NAV CONTENT ===========*/
+
+h4.blue {
+	color: #142855;
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	border-bottom: 1px solid #142855;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.leftNavContainer {
+	color: #333333;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	line-height: 1.6em;
+	margin: 0px;
+}
+
+
+
+/*=================== RIGHT CONTENT ================*/
+
+h3.subHeading {
+	margin: 10px 0;
+	color: #7E143C;
+
+}
+
+.rightContent {
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	clear: both;
+}
+
+.rightContent p {
+	padding: 5px 0px 5px 5px;
+}
+
+.rightContent ul {
+	margin: 5px 40px 5px 40px;
+	
+}
+
+.rightContent ul li {
+	margin: 0px 0px 10px 0px;
+	
+}
+
+.boldLinks a:link, .boldLinks a:visited {
+	color: #142855;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.boldLinks a:hover {
+	color: #7a003c;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+/*=================== FORMS ================*/
+
+
+input.loginHeaderSubmit {
+	color: #142855;
+	width: 60px;
+	font-size: 9px;
+
+}
+
+input.textarea {
+	color: #142855;
+	background-color:#FFFFFF;
+	border: 1px inset #999999;
+	width: 100px;
+	padding-left: 5px;
+}
+
+.formLabel {
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-variant: small-caps;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #708AB9;
+	padding: 0 5px;
+	border: solid 1px #142855;
+}
+
+fieldset {
+	border: 1px solid #CCCCCC;
+	margin-top: 0px;
+	padding: 10px;
+	font-size: 12px;
+
+}
+
+form p {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+
+}
+
+form p label {
+	float: left;
+	width: 10%;
+	
+}
+
+.meetingSubmit {
+	float: right;
+	margin-top: 10px;
+
+}
+
+.includeLeft {
+	float: left;
+	width: 50%;
+	display: block;
+}
+
+.dateRight {
+	float: right;
+	width: 50%;
+	display: block;
+
+}
+
+.locationLeft {
+	float: left;
+	width: 50%;
+	display: block;
+
+}
+
+/*==================== FORMS END ==================*/
+
+/*================ ICONS =============*/
+
+.tools {
+	background-image: url(../images/icons/hd_icon_tools_red.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.comm {
+	background-image: url(../images/icons/hd_icon_comm_blue.png);
+	background-repeat: no-repeat;
+	background-position: right;
+
+}
+
+.principles {
+	background-image: url(../images/icons/hd_icon_principles_blue2.png);
+	background-repeat: no-repeat;
+	background-position: right;
+
+}
+
+.instructional {
+	background-image: url(../images/icons/hd_icon_instructional_star.png);
+	background-repeat: no-repeat;
+	background-position: right;
+
+}
+
+.edtech {
+	background-image: url(../images/icons/hd_icon_edtech.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.leftImg {
+	float: left;
+	margin-right: 10px;
+}
+
+.rightImg {
+	float: right;
+	margin-left: 10px;
+}
+
+
+/*==================== MEETING TABLE ===============*/
+
+.meetingResults {
+	border: 1px solid #142855;
+	border-collapse: collapse;
+	width: 100%;
+	background: #EEEEEE;
+
+}
+
+.meetingResults td {
+	border: 1px solid #142855;
+	padding: 4px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.meetingResults th {
+	border: 1px solid #142855;
+	background-color: #142855;
+	font-weight: bold;
+	padding-left: 4px;
+	text-align: left;
+	color: #FFFFFF
+
+}
+
+.meetingResults tr.altrow {
+	background-color: #F9F9F9;
+
+}
+
+.meetingResults tr:hover {
+	background-color: #D9D9D9;
+	color: #142855;	
+
+
+}
+
+.meetingResults a:link, .meetingResults a:visited {
+	color: #7a003c;
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+.meetingResults a:hover {
+	color: #142855;
+	text-decoration: underline;
+
+}
+
+/*==================== MEETING TABLE END ===============*/

@@ -1,0 +1,192 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<mm_report>
+	<mm_reportname>	actions_clos.xml</mm_reportname>
+	<mm_reportdate>01/04/12 13:42:58</mm_reportdate>
+	<mm_reportlocation>C:\\home\orpa_wtx_new\webapp\</mm_reportlocation>
+	<mm_reportitem>
+		<mm_file>cl_los\copy_main.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="copy_f" id="copy_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Copy_DB" ]]></mm_displaystr>
+		<mm_data mm_rangemin="1038" mm_rangemax="1045" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\copy_main.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\copy_main.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="copy_f" id="copy_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Copy_DB" ]]></mm_displaystr>
+		<mm_data mm_rangemin="1058" mm_rangemax="1065" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\copy_main.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\copy_submit.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cflocation url="./index.cfm?action=CL_LOS_Edit_Major&disc=#theMajor#&pid=#programId#" /> ]]></mm_displaystr>
+		<mm_data mm_rangemin="705" mm_rangemax="712" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\copy_submit.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\delete_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="lo_entry_f" id="lo_entry_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Delete_Class" method="post" format="html"> ]]></mm_displaystr>
+		<mm_data mm_rangemin="1021" mm_rangemax="1028" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\delete_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\delete_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="lo_entry_f" id="lo_entry_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Delete_Class" method="post" format="html"> ]]></mm_displaystr>
+		<mm_data mm_rangemin="1041" mm_rangemax="1048" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\delete_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\delete_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Browse_Outcome&loid=#outcomes.loid#&disc=#t...]]></mm_displaystr>
+		<mm_data mm_rangemin="2434" mm_rangemax="2441" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\delete_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\delete_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Delete_Outcome&loid=#outcomes.loid#&disc=#t...]]></mm_displaystr>
+		<mm_data mm_rangemin="2621" mm_rangemax="2628" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\delete_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\deleteCLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cflocation url="./index.cfm?action=CL_LOS_Delete_class&selClass=#class#" /> ]]></mm_displaystr>
+		<mm_data mm_rangemin="351" mm_rangemax="358" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\deleteCLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="lo_entry_f" id="lo_entry_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Edit_Class" method="post" format="html"> ]]></mm_displaystr>
+		<mm_data mm_rangemin="957" mm_rangemax="964" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cfform name="lo_entry_f" id="lo_entry_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Edit_Class" method="post" format="html"> ]]></mm_displaystr>
+		<mm_data mm_rangemin="977" mm_rangemax="984" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_class.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Browse_Outcome&loid=#outcomes.loid#&disc=#t...]]></mm_displaystr>
+		<mm_data mm_rangemin="2368" mm_rangemax="2375" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_class.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_major.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Browse_Outcome&loid=#outcomes.loid#&disc=#d...]]></mm_displaystr>
+		<mm_data mm_rangemin="1415" mm_rangemax="1422" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_major.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_rubric.cfm</mm_file>
+		<mm_displaystr><![CDATA[...id="lo_entry_f" enctype="multipart/form-data" action="./index.cfm?Action=CL_LOS_Edit_Rubric&rubric=#rub...]]></mm_displaystr>
+		<mm_data mm_rangemin="996" mm_rangemax="1003" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_rubric.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_rubric.cfm</mm_file>
+		<mm_displaystr><![CDATA[...action="./index.cfm?Action=CL_LOS_Edit_Rubric&rubric=#rubric#" method="post"...]]></mm_displaystr>
+		<mm_data mm_rangemin="1016" mm_rangemax="1023" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_rubric.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_rubric.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Browse_Outcome&loid=#outcomes.loid#&disc=#r...]]></mm_displaystr>
+		<mm_data mm_rangemin="2888" mm_rangemax="2895" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_rubric.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\edit_by_rubric.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td width="25"><a href="./index.cfm?action=CL_LOS_Edit_Outcome&loid=#outcomes.loid#&disc=#sel...]]></mm_displaystr>
+		<mm_data mm_rangemin="3073" mm_rangemax="3080" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\edit_by_rubric.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\insertCLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cffile action="upload" ]]></mm_displaystr>
+		<mm_data mm_rangemin="236" mm_rangemax="243" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\insertCLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\insertCLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cflocation url="./index.cfm?action=CL_LOS_Admin_Add&loid=#newSLO.GENERATED_KEY#" /> ]]></mm_displaystr>
+		<mm_data mm_rangemin="983" mm_rangemax="990" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\insertCLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\insertCLOM.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cflocation url="./index.cfm?action=CL_LOS_Admin_Add&loid=#lo_id#" /> ]]></mm_displaystr>
+		<mm_data mm_rangemin="1648" mm_rangemax="1655" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\insertCLOM.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\link_lo_course.cfm</mm_file>
+		<mm_displaystr><![CDATA[...href="./index.cfm?action=CL_LOS_Admin_Add" title="Add a new Outcome to the...]]></mm_displaystr>
+		<mm_data mm_rangemin="562" mm_rangemax="569" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\link_lo_course.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\link_manage.cfm</mm_file>
+		<mm_displaystr><![CDATA[...Link Management:&nbsp;&nbsp;<a href="./index.cfm?action=CL_LOS_Admin_Link&disc=#disc#" title="Return to...]]></mm_displaystr>
+		<mm_data mm_rangemin="632" mm_rangemax="639" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\link_manage.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\link_manage.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <td align="center"><a href="./index.cfm?action=CL_LOS_Delete_Link&mapid=#courses.mapid#&outcomeId...]]></mm_displaystr>
+		<mm_data mm_rangemin="1934" mm_rangemax="1941" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\link_manage.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_browse_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="855" mm_rangemax="862" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_browse_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_browse_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="990" mm_rangemax="997" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_browse_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_cl_admin_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="855" mm_rangemax="862" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_cl_admin_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_cl_admin_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="990" mm_rangemax="997" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_cl_admin_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_cl_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="852" mm_rangemax="859" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_cl_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_cl_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="987" mm_rangemax="994" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_cl_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_delete_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="855" mm_rangemax="862" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_delete_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_delete_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="990" mm_rangemax="997" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_delete_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_edit_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="855" mm_rangemax="862" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_edit_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_edit_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="990" mm_rangemax="997" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_edit_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="849" mm_rangemax="856" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\los_links.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <li><a href="./index.cfm?action=#nav_body.Action#">#nav_body.MenuName#</a></li> ]]></mm_displaystr>
+		<mm_data mm_rangemin="984" mm_rangemax="991" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\los_links.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\updateCLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[ <cffile action="upload" ]]></mm_displaystr>
+		<mm_data mm_rangemin="240" mm_rangemax="247" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\updateCLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\view_CLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[...- #theOutcome.loName# - <a href="./index.cfm?action=CL_LOS_Browse_DISC&disc=#disc#" title="Return to...]]></mm_displaystr>
+		<mm_data mm_rangemin="553" mm_rangemax="560" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\view_CLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+	<mm_reportitem>
+		<mm_file>cl_los\viewAdd_CLO.cfm</mm_file>
+		<mm_displaystr><![CDATA[...Learning Outcome - <a href="./index.cfm?action=CL_LOS_Admin_Add&loid=#theLO#" title="Return to...]]></mm_displaystr>
+		<mm_data mm_rangemin="531" mm_rangemax="538" mm_filename="C:\home\orpa_wtx_new\webapp\cl_los\viewAdd_CLO.cfm" mm_replaced="false" mm_matchedtextdirty="false" />
+	</mm_reportitem>
+</mm_report>
